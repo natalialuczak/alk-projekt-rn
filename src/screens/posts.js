@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet } from "react-native";
 
 import { usePosts } from "../hooki api/usePosts";
-import PostList from "../components/list";
+import PostList from "../components/ListBase";
 
 const Posts = ({ route, navigation }) => {
   const { data, isError, isLoading } = usePosts();
