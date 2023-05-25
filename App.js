@@ -1,7 +1,7 @@
-import Posts from './src/screens/homepage';
+import Posts from './src/screens/posts';
 import { SafeAreaView, StyleSheet } from "react-native";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
-import SearchBar from './src/components/SearchBox';
+import Header from './src/components/header';
 
 const queryClient = new QueryClient();
 
@@ -9,6 +9,7 @@ export default function App() {
   return (
   <QueryClientProvider client={queryClient}>
     <SafeAreaView style={styles.container}>
+      <Header/>
       <Posts/>
       
     </SafeAreaView>
