@@ -49,9 +49,9 @@ const styles = StyleSheet.create({
     },
     itemContainer: {
       flex: 1,
-      margin: 2,
+      margin: 1,
       aspectRatio: 1,
-      borderRadius: 2,
+      borderRadius: 1,
       overflow: "hidden",
     },
     image: {

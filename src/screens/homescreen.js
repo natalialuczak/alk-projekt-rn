@@ -6,9 +6,9 @@ import Stories from "../../src/components/Stories";
 export default function Homescreen() {
   return (
     <SafeAreaView style={styles.container}>
-      <Header />
-      <Stories />
       <ScrollView style={styles.scrollContainer}>
+        <Header />
+        <Stories />
         <Posts />
       </ScrollView>
     </SafeAreaView>
