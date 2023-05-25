@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 
-const URL = "https://jsonplaceholder.typicode.com/posts";
+const URL = "https://jsonplaceholder.typicode.com//users";
 
 const getPosts = async () => {
   const response = await fetch(URL);
@@ -8,7 +8,7 @@ const getPosts = async () => {
 };
 
 export const usePosts = () => {
-  return useQuery(["posts"], getPosts, {
+  return useQuery(["users"], getPosts, {
     placeholderData: [],
   });
 };
