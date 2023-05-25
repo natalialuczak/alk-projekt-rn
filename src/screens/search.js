@@ -1,13 +1,16 @@
 import React from "react";
 import { View, ScrollView, StyleSheet } from "react-native";
 import SearchBar from "../components/SearchBox";
+import SearchGrid from "../components/SearchGrid";
+
 
 const Search = () => {
   return (
     <View style={styles.container}>
       <ScrollView>
         <SearchBar/>
-      </ScrollView>
+        <SearchGrid/>
+        </ScrollView>
     </View>
   );
 };
