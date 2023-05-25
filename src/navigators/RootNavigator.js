@@ -1,13 +1,12 @@
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import {StyleSheet} from "react-native";
-import { Ionicons} from "@expo/vector-icons";
+import { StyleSheet } from "react-native";
+import { Ionicons } from "@expo/vector-icons";
 import Homescreen from "../../src/screens/homescreen";
 import Search from "../../src/screens/search";
 import Profil from "../../src/screens/profil";
 import Reels from "../../src/screens/reels";
 import Shop from "../../src/screens/shop";
-
 
 const Tab = createBottomTabNavigator();
 // const screenOptions = {
@@ -17,7 +16,7 @@ const Tab = createBottomTabNavigator();
 
 export default function Routes() {
   return (
-<Tab.Navigator
+    <Tab.Navigator
       screenOptions={({ route }) => ({
         tabBarIcon: ({ size }) => {
           let iconName;
@@ -40,17 +39,38 @@ export default function Routes() {
       tabBarOptions={{
         showLabel: false,
         style: {
-          elevation: 0, 
-          borderTopWidth: 0, 
+          elevation: 0,
+          borderTopWidth: 0,
+          height: 50,
         },
       }}
     >
-    <Tab.Screen name="Home" component={Homescreen} options={{ headerShown: false }} />
-    <Tab.Screen name="Search" component={Search} options={{ headerShown: false }} />
-    <Tab.Screen name="Reels" component={Reels} options={{ headerShown: false }} />
-    <Tab.Screen name="Shop" component={Shop}  options={{ headerShown: false }}/>
-    <Tab.Screen name="Profil" component={Profil}  options={{ headerShown: false }}/>
-  </Tab.Navigator>
+      <Tab.Screen
+        name="Home"
+        component={Homescreen}
+        options={{ headerShown: false }}
+      />
+      <Tab.Screen
+        name="Search"
+        component={Search}
+        options={{ headerShown: false }}
+      />
+      <Tab.Screen
+        name="Reels"
+        component={Reels}
+        options={{ headerShown: false }}
+      />
+      <Tab.Screen
+        name="Shop"
+        component={Shop}
+        options={{ headerShown: false }}
+      />
+      <Tab.Screen
+        name="Profil"
+        component={Profil}
+        options={{ headerShown: false }}
+      />
+    </Tab.Navigator>
   );
 }
 

@@ -64,7 +64,7 @@ import {
       margin: 8,
     },
     listItemContainerFilled: {
-      backgroundColor: "green",
+      backgroundColor: "#white",
     },
     headerContainer: {
       backgroundColor: "red",
